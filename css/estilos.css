@@ -1,0 +1,207 @@
+@font-face {
+font-family: 'Dancing Script', cursive;
+src: url('Dancing Script.otf');
+}
+body{
+background:#02010a;
+font-family: 'Dancing Script', cursive;
+font-size: 16px;
+}
+.contenedor {
+    margin: 0 auto;
+    width: 85%;
+	display: flex;
+	flex-flow: row wrap;
+}
+m{
+	text-indent: 1cm;
+	letter-spacing: 2px;
+	padding: 10px;
+	color: white;
+	text-shadow: 2px 2px 2px #02010a;
+}
+a {
+	text-indent: 1cm;
+	letter-spacing: 1px;
+	color: white;
+	padding: 10px;
+	color: white;
+}
+h2{
+		text-decoration: underline black;
+}
+figure img {
+	box-shadow: 2px 2px 3px #02010a;
+	/*border: 2px solid #02010a;*/
+}
+#imagen2 img{
+	border-radius:2px;
+	transition-duration: 0.5s;
+}
+#imagen2 img:hover{
+	transform: rotate(10deg);
+}
+#imagen3 img{
+	border-radius:2px;
+	transition-duration: 0.5s;
+}
+#imagen3 img:hover{
+	transform: translate3d(20px, -5px, 0px)
+}
+.active{ 
+	text-decoration: none;
+}
+.contenedor2 {
+	text-decoration: underline black;
+    width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.contenedor3 {
+    margin: 0 auto;
+    width: 85%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.bloque1 {
+    color: #ddd;
+    background-color: #5b7989;
+	min-height: 65px;
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+.bloque2 {
+	background-color: #82c3a6;
+	min-height: 300px;
+	width: 100%;
+	text-align: center;
+}
+.bloque3 {
+    background-color: #d5c75f;
+    min-height: 250px;
+	width: 50%;
+	border-radius: 1px 0 0 1px;
+	text-align: center;
+}
+.bloque4 {
+    background-color: #d5c75f ;
+	min-height: 250px;
+	width: 50%;
+	text-align: center;
+	border-radius: 0 1px 1px 0;
+}
+.bloque5 {
+    background-color: #C6d5c5;
+	min-height: 200px;
+	width: 25%;
+	border-radius: 0px 0px 0px 10px;
+	text-align: left;
+	text-indent: 1cm;
+}
+.bloque6 {
+    background-color: #C6d5c5;
+	min-height: 200px;
+	width: 25%;
+	text-align: left;
+}
+.bloque7 {
+    background-color: #C6d5c5;
+	min-height: 200px;
+	width: 25%;
+	text-align: left;
+}
+.bloque8 {
+    background-color: #C6d5c5;
+	min-height: 200px;
+	width: 25%;
+	border-radius: 0px 0px 10px 0;
+	text-align: left;
+}
+@keyframes imagen2-animacion { 
+0%{
+margin-top: 150%;
+}
+60%{
+margin-top: -5%;
+}
+100%{
+margin-top: 0%;
+}
+}
+body{
+animation-name: imagen2-animacion;
+animation-duration: 1s;
+}
+/*Break points de cambios debido al tamaño de pantalla*/
+@media all and (max-width: 900px) {
+	.contenedor{
+		width: 100%;
+		text-align: center;
+	}
+	.bloque1 {
+		width: 100%;
+		min-height: 65px;
+		order:1;
+		padding-right: 80px;
+		padding-left: 60px;
+	}
+	.bloque2 {
+		width: 100%;
+		min-height: 100px;
+		order:2;
+	}
+	.contenedor2{
+		width: 100%;
+		order:3;
+	}
+	.bloque3{
+		width: 100%;
+		min-height: 100px;
+	}
+	.bloque4 {
+		width: 100%;
+		min-height: 100px;
+	}
+	.contenedor3{
+		width: 100%;
+		min-height: 200px;
+		order:4;
+	}
+	.bloque5{
+		width: 100%;
+		min-height: 50px;
+		text-indent: 2cm;
+		border-radius: 0px 0px 0px 0px;
+	}
+	.bloque6 {
+		width: 100%;
+		min-height: 50px;
+		text-indent: 2cm;
+	}
+	.bloque7 {
+		width: 100%;
+		min-height: 50px;
+		text-indent: 2cm;
+	}
+	.bloque8 {
+		width: 100%;
+		min-height: 120px;
+		text-indent: 2cm;
+		border-radius: 0 0 10px 10px;
+	}
+@keyframes imagen2-animacion { 
+0%{
+margin-top: 150%;
+}
+60%{
+margin-top: -5%;
+}
+100%{
+margin-top: 0%;
+}
+}
+body{
+animation-name: imagen2-animacion;
+animation-duration: 1s;
+}
+}
